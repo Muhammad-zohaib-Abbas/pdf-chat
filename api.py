@@ -254,6 +254,7 @@ def upload_pdf(
             # Our own file name on disk; the client's name is only a label.
             pdf_path = Path(temp_dir) / "upload.pdf"
             total_size = 0
+            
 
             with pdf_path.open("wb") as destination:
                 while True:
